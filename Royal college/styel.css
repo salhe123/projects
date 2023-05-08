@@ -1,0 +1,284 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+#back{
+background:linear-gradient( to top,rgba(0,0,0,0.5) 100% , rgba(0,0,0,0.5) 100% ),url(book4.JPG);
+background-size: 100%;
+background-position: center;
+height:45vh;
+
+}
+.logo{
+	width: 200px;
+	position: absolute;
+	top: 4%;
+	left: 5%;
+}
+.back-text{
+	text-align: center;
+	color:#fff ;
+	padding-top: 90px;
+}
+.back-text h1{
+
+	font-size: 100px;
+}
+.back-text p{
+	font-size: 70px;
+	font-style: italic;
+}
+ #sideNav{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+
+	background: #009688;
+	z-index: 2;
+	transition: 0.5s;
+}
+ #sideNav nav ul li{
+	list-style: none;
+	margin:50px 20px ;
+}
+
+#sideNav nav ul li a{
+	text-decoration:none;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.5s ease-in-out ;
+}
+#sideNavnav ul li a:hover{
+	color: blue;
+}
+
+
+.w{
+	text-decoration:none;
+	color: black;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+	font-style: italic;
+}
+.con ul li a{
+	color: black;
+}
+.o{
+	text-align: center;
+}
+
+.drop{
+ 	background: #dedede;
+ 	font-family: arial;
+ 	margin: 0;
+ 	padding:0;
+ 	background-size: 100%;
+ }
+ .hori{
+ 	margin:0 auto;
+ }
+ .hori nav{
+ 	height: 100px;
+ 	background: #2c3e50;
+ 	box-shadow: 0 10px 150px rgba(0, 0, 0, 0.1);
+ }
+.hori nav ul{
+	padding: 0;
+	margin: 0;
+	float: right; 
+	margin-right: 200px;
+}
+
+.hori nav ul li{
+	background: #2c3e50;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+ .hori nav ul li a{
+
+font-size: 18px;
+color: white;
+text-decoration: none;
+
+padding: 0;
+}
+.hori nav ul li a:hover{
+	background: #2c3e50;
+	color: blue;
+} 
+ .hori nav ul ul{
+	position: absolute;
+	 top: 60px; 
+	 display: none;
+}
+ .hori nav ul li:hover > ul{
+	display: block;
+}
+.hori nav ul ul li{
+	
+	float: none;
+	display: list-item;
+	position: relative;
+} 
+.hori nav ul ul ul li{
+	position: relative;
+	top: 10px;
+	letter-spacing: 150px;
+	
+}
+.bit{
+	height: 100vh;
+	width: 100%;
+    background-size: 100%;
+
+    height:100vh;
+}
+.bit p{
+   text-align: center;
+   
+   padding-top: 140px;
+
+}
+#slider {
+  overflow: hidden;
+  width: 100%;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  z-index: 0;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+  height: 550px;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+#csbtn{
+	width: 80px;
+	height: 80px;
+	text-align: right;
+	border-radius: 3px;
+	z-index:3;
+	cursor: pointer;
+}
+#csbtn img{
+	background:#4CAF50;
+	width: 50px;
+	margin-top:-50px ;
+	right: 5000px;
+}
+#footer{
+	width: 100%;
+	padding: 10px 0 10px;
+	background: #efefef;
+}
+
+.title-text{
+	text-align: center;
+	padding-bottom: 15px;
+}
+.title-text p{
+	margin: auto;
+	font-size: 40px;
+	color: #009688;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.title-text p::after{
+	content: '';
+	width: 40px;
+	height: 55px;
+	background: linear-gradient(#019587 , #fff);
+	position: absolute;
+	top: -20px;
+	left: 0;
+	z-index: -1;
+	transform: rotate(40deg);
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 30px;
+}
+.title-text h1{
+	font-size: 50px;
+
+}
+.footer-row{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+	flex-basis:45%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.footer-right{
+	text-align: right;
+}
+.footer-row h1{
+	margin: 10px 0;	
+}
+.footer-row p{
+	line-height: 35px;
+}
+.footer-left .fa,.footer-right.fa{
+	font-size: 20px;
+	color: #009688;
+	margin: 10px;
+}
+.footer-row .fa{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	border-radius: 8px;
+	color: #009688;
+	border: 1px solid #009688;
+}
+.copy{
+	text-align: center;
+}
